@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeyHelpy - Trusted Tutors & Babysitters, Just a Block Away</title>
+    <meta name="description" content="Find AI-matched, background-verified tutors and babysitters in your neighborhood. Download the HeyHelpy app for trusted local help.">
+    <meta name="keywords" content="tutors, babysitters, childcare, local help, background verified, AI matching">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-blue': '#3171e0',
+                        'brand-green': '#00c896',
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center cursor-pointer" onclick="window.location.href='index.html'">
+                    <div class="flex items-center">
+                        <span class="ml-2 text-xl font-bold">
+                            <span class="text-brand-green">Hey</span><span class="text-brand-blue">Helpy!</span>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 hover:text-brand-blue font-medium active">Home</a>
+                    <a href="about.html" class="nav-link text-gray-700 hover:text-brand-blue font-medium">About</a>
+                    <a href="#safety" class="nav-link text-gray-700 hover:text-brand-blue font-medium" data-scroll="safety">Trust & Safety</a>
+                    <a href="contact.html" class="nav-link text-gray-700 hover:text-brand-blue font-medium">Contact</a>
+                </div>
+
+                <!-- Download Buttons -->
+                <div class="hidden sm:flex items-center space-x-3">
+                    <a href="#" class="download-btn inline-flex items-center px-4 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 transition-colors">
+                        <i class="fab fa-apple mr-2"></i>
+                        App Store
+                    </a>
+                    <a href="#" class="download-btn inline-flex items-center px-4 py-2 bg-brand-blue text-white rounded-lg text-sm font-medium hover:bg-blue-600 transition-colors">
+                        <i class="fab fa-google-play mr-2"></i>
+                        Google Play
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-gray-700 hover:text-brand-blue" id="mobile-menu-btn">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-4 py-3 space-y-3">
+                <a href="index.html" class="block text-gray-700 font-medium">Home</a>
+                <a href="about.html" class="block text-gray-700 font-medium">About</a>
+                <a href="#safety" class="block text-gray-700 font-medium" data-scroll="safety">Trust & Safety</a>
+                <a href="contact.html" class="block text-gray-700 font-medium">Contact</a>
+                <div class="pt-3 border-t border-gray-100 space-y-2">
+                    <a href="#" class="download-btn block w-full text-center py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700">
+                        <i class="fab fa-apple mr-2"></i>App Store
+                    </a>
+                    <a href="#" class="download-btn block w-full text-center py-2 bg-brand-blue text-white rounded-lg text-sm font-medium">
+                        <i class="fab fa-google-play mr-2"></i>Google Play
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-blue-50 to-green-50 py-20 pt-32" id="hero">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6 animate-fade-in">
+                    Trusted Tutors & Babysitters,<br>
+                    <span class="text-brand-blue">Just a Block Away</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto animate-fade-in-delay">
+                    AI-matched helpers, background-verified, available on the go.
+                    Connect with trusted local tutors and babysitters in your neighborhood.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+                    <a href="#" class="btn-primary download-btn inline-flex items-center px-8 py-4 text-white font-semibold rounded-xl text-lg">
+                        <i class="fab fa-apple mr-3 text-xl"></i>
+                        Download on the App Store
+                    </a>
+                    <a href="#" class="btn-primary download-btn inline-flex items-center px-8 py-4 text-white font-semibold rounded-xl text-lg">
+                        <i class="fab fa-google-play mr-3 text-xl"></i>
+                        Get it on Google Play
+                    </a>
+                </div>
+                <div class="text-sm text-gray-500">
+                    <i class="fas fa-users mr-2"></i>
+                    <span class="counter" data-target="50000">0</span>+ families trust HeyHelpy
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-20 bg-white" id="how-it-works">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">How It Works</h2>
+                <p class="text-xl text-gray-600">Get help in three simple steps</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center step-card" data-step="1">
+                    <div class="w-20 h-20 bg-brand-blue rounded-full flex items-center justify-center mx-auto mb-6 step-icon">
+                        <i class="fas fa-search text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">1. Find</h3>
+                    <p class="text-gray-600">Browse verified tutors and babysitters in your area. Filter by skills, availability, and reviews.</p>
+                </div>
+                <div class="text-center step-card" data-step="2">
+                    <div class="w-20 h-20 bg-brand-green rounded-full flex items-center justify-center mx-auto mb-6 step-icon">
+                        <i class="fas fa-heart text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">2. Match</h3>
+                    <p class="text-gray-600">Our AI matches you with the perfect helper based on your needs, schedule, and preferences.</p>
+                </div>
+                <div class="text-center step-card" data-step="3">
+                    <div class="w-20 h-20 bg-brand-blue rounded-full flex items-center justify-center mx-auto mb-6 step-icon">
+                        <i class="fas fa-calendar-check text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">3. Book</h3>
+                    <p class="text-gray-600">Schedule sessions instantly through the app. Chat, pay, and review all in one place.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-20 bg-gray-50" id="benefits">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose HeyHelpy?</h2>
+                <p class="text-xl text-gray-600">Safety, convenience, and quality you can trust</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="feature-card bg-white p-8 rounded-2xl shadow-sm">
+                    <div class="w-16 h-16 bg-gradient-to-br from-brand-blue to-brand-green rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-brain text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">AI-Powered Matching</h3>
+                    <p class="text-gray-600">Smart algorithms connect you with helpers who match your specific needs, schedule, and family preferences.</p>
+                </div>
+                <div class="feature-card bg-white p-8 rounded-2xl shadow-sm">
+                    <div class="w-16 h-16 bg-gradient-to-br from-brand-green to-brand-blue rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Verified Helpers</h3>
+                    <p class="text-gray-600">Every helper undergoes comprehensive background checks and verification before joining our platform.</p>
+                </div>
+                <div class="feature-card bg-white p-8 rounded-2xl shadow-sm">
+                    <div class="w-16 h-16 bg-gradient-to-br from-brand-blue to-brand-green rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-map-marker-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Local & Available</h3>
+                    <p class="text-gray-600">Find trusted help right in your neighborhood. Quick response times and local community connections.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust & Safety Section -->
+    <section class="py-20 bg-white" id="safety">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Trust & Safety</h2>
+                <p class="text-xl text-gray-600">Your family's safety is our top priority</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="safety-card bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl">
+                    <div class="w-16 h-16 bg-brand-blue rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Background Checks</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center"><i class="fas fa-check text-brand-green mr-3"></i>Criminal background screening</li>
+                        <li class="flex items-center"><i class="fas fa-check text-brand-green mr-3"></i>Identity verification</li>
+                        <li class="flex items-center"><i class="fas fa-check text-brand-green mr-3"></i>Reference checks</li>
+                    </ul>
+                </div>
+                <div class="safety-card bg-gradient-to-br from-green-50 to-white p-8 rounded-2xl">
+                    <div class="w-16 h-16 bg-brand-green rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-brain text-white text-2xl"></i>
+                    </div>
+                   <h3 class="text-xl font-semibold text-gray-900 mb-4">Safety & Trust</h3>
+                    <ul class="space-y-2 text-gray-700">
+                      <li class="flex items-center">
+                        <svg class="h-5 w-5 text-green-600 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                        Two Factor Authentication.
+                      </li>
+                      <li class="flex items-center">
+                        <svg class="h-5 w-5 text-green-600 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                        Real reviews from trusted parents
+                      </li>
+                      <li class="flex items-center">
+                        <svg class="h-5 w-5 text-green-600 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                        In-app chat & support system
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-gray-50" id="testimonials">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Families Say</h2>
+                <p class="text-xl text-gray-600">Real stories from real families</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-track">
+                    <div class="testimonial-card p-8 rounded-2xl">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-brand-blue rounded-full flex items-center justify-center">
+                                <span class="text-white font-semibold">SJ</span>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-semibold text-gray-900">Sarah Johnson</h4>
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">"Found an amazing math tutor for my daughter within minutes. The AI matching was spot-on - she's already improving her grades!"</p>
+                    </div>
+                    <div class="testimonial-card p-8 rounded-2xl">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-brand-green rounded-full flex items-center justify-center">
+                                <span class="text-white font-semibold">MR</span>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-semibold text-gray-900">Mike Rodriguez</h4>
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">"As a single dad, HeyHelpy has been a lifesaver. Reliable babysitters I can trust, right in my neighborhood."</p>
+                    </div>
+                    <div class="testimonial-card p-8 rounded-2xl">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-brand-blue rounded-full flex items-center justify-center">
+                                <span class="text-white font-semibold">LW</span>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-semibold text-gray-900">Lisa Wang</h4>
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">"The background verification gives me peace of mind. The app makes booking and communication so easy."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-brand-blue to-brand-green" id="cta">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Get Started?</h2>
+            <p class="text-xl text-blue-100 mb-8">Join <span class="counter" data-target="50000">0</span>+ families who trust HeyHelpy for their childcare and tutoring needs.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#" class="download-btn inline-flex items-center px-8 py-4 bg-white text-brand-blue font-semibold rounded-xl text-lg hover:bg-gray-50 transition-colors">
+                    <i class="fab fa-apple mr-3 text-xl"></i>
+                    Download on the App Store
+                </a>
+                <a href="#" class="download-btn inline-flex items-center px-8 py-4 bg-white text-brand-blue font-semibold rounded-xl text-lg hover:bg-gray-50 transition-colors">
+                    <i class="fab fa-google-play mr-3 text-xl"></i>
+                    Get it on Google Play
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="flex items-center">
+                            <span class="ml-2 text-lg font-bold">
+                                <span class="text-brand-green">Hey</span><span class="text-brand-blue">Helpy!</span>
+                            </span>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4">Trusted tutors and babysitters, just a block away.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="#safety" class="hover:text-white transition-colors" data-scroll="safety">Trust & Safety</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Community Guidelines</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Download</h4>
+                    <div class="space-y-3">
+                        <a href="#" class="download-btn flex items-center text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-apple mr-2"></i>
+                            iOS App Store
+                        </a>
+                        <a href="#" class="download-btn flex items-center text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-google-play mr-2"></i>
+                            Google Play Store
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 HeyHelpy. All rights reserved. | A product of SupportHub</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-brand-blue text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition-all duration-300 opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

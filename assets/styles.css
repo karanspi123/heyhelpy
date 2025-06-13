@@ -1,0 +1,279 @@
+/* Custom Styles for HeyHelpy */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Navigation */
+.nav-link {
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-link.active {
+    color: #3171e0;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(135deg, #3171e0 0%, #00c896 100%);
+    border-radius: 1px;
+}
+
+/* Buttons */
+.btn-primary {
+    background: linear-gradient(135deg, #3171e0 0%, #00c896 100%);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(49, 113, 224, 0.3);
+}
+
+.download-btn {
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    transform: translateY(-1px);
+}
+
+/* Feature Cards */
+.feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Step Cards */
+.step-card {
+    transition: transform 0.3s ease;
+}
+
+.step-card:hover {
+    transform: translateY(-3px);
+}
+
+.step-icon {
+    transition: transform 0.3s ease;
+}
+
+.step-card:hover .step-icon {
+    transform: scale(1.1);
+}
+
+/* Safety Cards */
+.safety-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.safety-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials */
+.testimonial-card {
+    background: linear-gradient(135deg, #f8faff 0%, #f0f9ff 100%);
+    transition: transform 0.3s ease;
+    min-width: 300px;
+    margin-right: 1rem;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-3px);
+}
+
+.testimonial-slider {
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonial-track {
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Pause animation on hover */
+.testimonial-slider:hover .testimonial-track {
+    animation-play-state: paused;
+}
+
+/* Contact Form */
+.contact-info-item {
+    transition: transform 0.3s ease;
+}
+
+.contact-info-item:hover {
+    transform: translateX(5px);
+}
+
+/* Social Links */
+.social-link {
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-2px);
+}
+
+/* Back to Top Button */
+#back-to-top {
+    transition: all 0.3s ease;
+}
+
+#back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-out;
+}
+
+.animate-fade-in-delay {
+    animation: fadeIn 0.8s ease-out 0.3s both;
+}
+
+/* Counter Animation */
+.counter {
+    transition: all 0.3s ease;
+}
+
+/* Loading States */
+.loading {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+/* Form Validation */
+.form-error {
+    border-color: #ef4444;
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.form-success {
+    border-color: #10b981;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+    .testimonial-track {
+        animation-duration: 15s;
+    }
+    
+    .feature-card:hover,
+    .step-card:hover,
+    .safety-card:hover {
+        transform: none;
+    }
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #3171e0 0%, #00c896 100%);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #2563eb 0%, #059669 100%);
+}
+
+/* Focus States for Accessibility */
+.nav-link:focus,
+.download-btn:focus,
+.btn-primary:focus,
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+    outline: 2px solid #3171e0;
+    outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+    .fixed,
+    #back-to-top,
+    .download-btn {
+        display: none !important;
+    }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+    .btn-primary {
+        background: #000;
+        color: #fff;
+        border: 2px solid #fff;
+    }
+
+    .feature-card,
+    .testimonial-card,
+    .safety-card {
+        border: 2px solid #000;
+    }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .testimonial-track {
+        animation: none;
+    }
+}
+
+/* Dark Mode Support (Future Enhancement) */
+@media (prefers-color-scheme: dark) {
+    /* This can be expanded for dark mode support */
+}

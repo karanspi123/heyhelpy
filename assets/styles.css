@@ -35,12 +35,26 @@ body {
     box-shadow: 0 8px 25px rgba(49, 113, 224, 0.3);
 }
 
+.btn-secondary {
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(49, 113, 224, 0.2);
+}
+
 .download-btn {
     transition: all 0.3s ease;
 }
 
 .download-btn:hover {
     transform: translateY(-1px);
+}
+
+/* Disabled state for coming soon buttons */
+.download-btn.opacity-50.cursor-not-allowed:hover {
+    transform: none;
 }
 
 /* Feature Cards */
@@ -186,16 +200,62 @@ body {
     box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
 }
 
+/* Legal and Compliance Styling */
+.legal-disclaimer {
+    background: rgba(249, 250, 251, 0.8);
+    border-left: 4px solid #3171e0;
+}
+
+/* Helper-specific styles */
+.helper-requirement {
+    transition: background-color 0.3s ease;
+}
+
+.helper-requirement:hover {
+    background-color: rgba(49, 113, 224, 0.05);
+}
+
+/* Texas-specific styling */
+.texas-focus {
+    background: linear-gradient(135deg, #f8faff 0%, #f0fdf4 100%);
+}
+
+/* Adult-only platform indicators */
+.adult-only-indicator {
+    background: linear-gradient(135deg, #3171e0 0%, #7c3aed 100%);
+    color: white;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+}
+
+/* Independent contractor styling */
+.contractor-badge {
+    background: linear-gradient(135deg, #00c896 0%, #10b981 100%);
+    color: white;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+}
+
 /* Mobile Optimizations */
 @media (max-width: 768px) {
     .testimonial-track {
         animation-duration: 15s;
     }
-    
+
     .feature-card:hover,
     .step-card:hover,
     .safety-card:hover {
         transform: none;
+    }
+
+    /* Mobile-specific legal text */
+    .legal-disclaimer {
+        padding: 1rem;
+        font-size: 0.875rem;
     }
 }
 
@@ -226,6 +286,7 @@ html {
 .nav-link:focus,
 .download-btn:focus,
 .btn-primary:focus,
+.btn-secondary:focus,
 input:focus,
 textarea:focus,
 select:focus,
@@ -234,21 +295,18 @@ button:focus {
     outline-offset: 2px;
 }
 
-/* Print Styles */
-@media print {
-    .fixed,
-    #back-to-top,
-    .download-btn {
-        display: none !important;
-    }
-}
-
 /* High Contrast Mode Support */
 @media (prefers-contrast: high) {
     .btn-primary {
         background: #000;
         color: #fff;
         border: 2px solid #fff;
+    }
+
+    .btn-secondary {
+        background: #fff;
+        color: #000;
+        border: 2px solid #000;
     }
 
     .feature-card,
@@ -270,6 +328,48 @@ button:focus {
 
     .testimonial-track {
         animation: none;
+    }
+}
+
+/* Coming Soon Styling */
+.coming-soon {
+    position: relative;
+    overflow: hidden;
+}
+
+.coming-soon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .fixed,
+    #back-to-top,
+    .download-btn {
+        display: none !important;
+    }
+
+    .legal-disclaimer,
+    .adult-only-indicator,
+    .contractor-badge {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
     }
 }
 

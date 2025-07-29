@@ -1,8 +1,8 @@
 # HeyHelpy
 
-**Trusted Tutors & Babysitters, Just a Block Away**
+**Trusted Tutors, Just a Block Away**
 
-HeyHelpy is a mobile app platform that connects families with AI-matched, background-verified tutors and babysitters in their local neighborhood.
+HeyHelpy is a mobile app platform that connects families with AI-matched, background-verified tutors in their local neighborhood.
 
 ## Features
 
@@ -14,7 +14,7 @@ HeyHelpy is a mobile app platform that connects families with AI-matched, backgr
 
 ## How It Works
 
-1. **Find** - Browse verified tutors and babysitters in your area
+1. **Find** - Browse verified tutors in your area
 2. **Match** - Our AI matches you with the perfect helper based on your needs
 3. **Book** - Schedule sessions instantly through the app
 

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Policies - HeyHelpy</title>
+    <meta name="description" content="HeyHelpy Legal Policies - Understanding the legal framework for our tutoring platform and your rights as a user.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-blue': '#3171e0',
+                        'brand-green': '#00c896',
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center cursor-pointer" onclick="window.location.href='index.html'">
+                    <div class="flex items-center">
+                        <span class="ml-2 text-xl font-bold">
+                            <span class="text-brand-green">Hey</span><span class="text-brand-blue">Helpy!</span>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 hover:text-brand-blue font-medium">Home</a>
+                    <a href="about.html" class="nav-link text-gray-700 hover:text-brand-blue font-medium">About</a>
+                    <a href="index.html#safety" class="nav-link text-gray-700 hover:text-brand-blue font-medium">Trust & Safety</a>
+                    <a href="contact.html" class="nav-link text-gray-700 hover:text-brand-blue font-medium">Contact</a>
+                </div>
+
+                <!-- Download Buttons -->
+                <div class="hidden sm:flex items-center space-x-3">
+                    <a href="#" class="download-btn inline-flex items-center px-4 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 transition-colors opacity-50 cursor-not-allowed">
+                        <i class="fab fa-apple mr-2"></i>
+                        Coming Soon - App Store
+                    </a>
+                    <a href="#" class="download-btn inline-flex items-center px-4 py-2 bg-brand-blue text-white rounded-lg text-sm font-medium hover:bg-blue-600 transition-colors opacity-50 cursor-not-allowed">
+                        <i class="fab fa-google-play mr-2"></i>
+                        Coming Soon - Google Play
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-gray-700 hover:text-brand-blue" id="mobile-menu-btn">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-4 py-3 space-y-3">
+                <a href="index.html" class="block text-gray-700 font-medium">Home</a>
+                <a href="about.html" class="block text-gray-700 font-medium">About</a>
+                <a href="index.html#safety" class="block text-gray-700 font-medium">Trust & Safety</a>
+                <a href="contact.html" class="block text-gray-700 font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-blue-50 to-green-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 animate-fade-in">Legal Policies</h1>
+            <p class="text-xl text-gray-600 animate-fade-in-delay">Understanding the legal framework for our tutoring platform</p>
+        </div>
+    </section>
+
+    <!-- Legal Content -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Overview -->
+            <div class="bg-gradient-to-br from-blue-50 to-green-50 p-8 rounded-2xl mb-12">
+                <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-brand-blue rounded-xl flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-balance-scale text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">HeyHelpy Legal Framework</h2>
+                        <p class="text-gray-700 leading-relaxed">
+                            HeyHelpy connects families with independent tutoring professionals for educational services. You must be 15+ to create an account (18+ to provide tutoring services). Payments are processed securely via Stripe. Tutors are independent contractors, not HeyHelpy employees. Your privacy and data security are protected. Location data is used to match families with nearby qualified tutors.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Points -->
+            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 mb-12">
+                <h3 class="text-lg font-semibold text-yellow-900 mb-2">Key Points At A Glance</h3>
+                <ul class="text-yellow-800 space-y-2">
+                    <li>• Platform connects families with independent tutoring professionals</li>
+                    <li>• Minimum age: 15+ for accounts, 18+ for tutoring services</li>
+                    <li>• Secure payment processing through Stripe</li>
+                    <li>• Tutors are independent contractors with their own teaching methods</li>
+                    <li>• Session cancellations within 24 hours may incur fees</li>
+                    <li>• Privacy and educational data are protected</li>
+                    <li>• Location matching for local tutoring connections</li>
+                </ul>
+            </div>
+
+            <!-- Legal Content Sections -->
+            <div class="space-y-12">
+                
+                <!-- Section 1: Agreement to Terms -->
+                <div class="legal-section">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">1. Agreement to Terms</h2>
+                    <div class="text-gray-700 space-y-4">
+                        <p>Welcome to HeyHelpy! These Legal Policies govern your access to and use of the HeyHelpy mobile application and platform operated by HeyHelpy, Inc. By downloading, accessing, or using our platform, you agree to be bound by these policies in conjunction with our Terms of Service and Privacy Policy. If you do not agree to these policies, you may not access or use the platform.</p>
+                    </div>
+                </div>
+
+                <!-- Section 2: Educational Services Overview -->
+                <div class="legal-section">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">2. Educational Services Overview</h2>
+                    <div class="text-gray-700 space-y-4">
+                        <p>HeyHelpy is a technology platform that connects families seeking tutoring services ("Parents" or "Students") with independent tutoring professionals who can provide educational services ("Tutors"). Our platform facilitates the connection between families and tutors, and provides tools for session booking, communication, scheduling, academic progress tracking, and secure payment processing through Stripe.</p>
+                        
+                        <div class="bg-blue-50 border-l-4 border-blue-400 p-6">
+                            <h3 class="text-lg font-semibold text-blue-900 mb-2">Educational Focus</h3>
+                            <p class="text-blue-800">All services on HeyHelpy are educational in nature, including academic tutoring, test preparation, homework assistance, and learning support across various subjects and grade levels.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3: Account Registration -->
+                <div class="legal-section">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">3. Account Registration</h2>
+                    
+                    <div class="text-gray-700 space-y-6">
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-3">3.1 Account Creation</h3>
+                            <p>To use our platform, you must create an account. When registering, you agree to provide accurate, current, and complete information. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-3">3.2 Age Requirements</h3>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li><strong>General Users:</strong> Must be 15 years or older to create an account</li>
+                                <li><strong>Tutors:</strong> Must be 18 years or older to provide tutoring services</li>
+                                <li><strong>Parent Accounts:</strong> Parents may create accounts to find tutoring services for their students</li>
+                                <li><strong>Student Protection:</strong> We do not collect personal information directly from children under 15</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-3">3.3 Account Security</h3>
+                            <p>You are solely responsible for maintaining the confidentiality of your password, restricting access to your account, and notifying us immediately of any unauthorized use of your account. We reserve the right to suspend or terminate your account if we suspect unauthorized or fraudulent use.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 4: User Roles and Responsibilities -->
+                <div class="legal-section">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">4. User Roles and Responsibilities</h2>
+                    
+                    <div class="text-gray-700 space-y-6">
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-3">4.1 Parents/Students (Education Seekers)</h3>
+                            <p>As a family seeking tutoring services, you agree to:</p>
+                            <ul class="list-disc pl-6 space-y-2 mt-3">
+                                <li>Provide accurate and complete information about educational needs</li>
+                                <li>Set reasonable academic expectations and learning goals</li>
+                                <li>Communicate clearly with tutors about student progress</li>
+                                <li>Pay for completed tutoring sessions promptly</li>
+                                <li>Provide honest and fair ratings/reviews of tutoring services</li>
+                                <li>Ensure student safety and appropriate learning environments</li>
+                                <li>Not request illegal, inappropriate, or non-educational services</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-3">4.2 Tutors (Educational Service Providers)</h3>
+                            <p>As a tutor offering educational services, you agree to:</p>
+                            <ul class="list-disc pl-6 space-y-2 mt-3">
+                                <li>Provide accurate information about your qualifications and expertise</li>
+                                <li>Complete tutoring sessions to the best of your professional ability</li>
+                                <li>Communicate effectively with families about student progress</li>
+                                <li>Maintain professional conduct and educational standards at all times</li>
+                                <li>Report income and pay applicable taxes as required by law</li>
+                                <li>Comply with all applicable educational laws and regulations</li>
+                                <li>Complete background verification and maintain required credentials</li>
+                                <li>Prioritize student safety and educational outcomes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 5: Independent Contractor Status -->
+                <div class="legal-section">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">5. Independent Contractor Status</h2>
+                    
+                    <div class="bg-red-50 border-l-4 border-red-400 p-6 mb-6">
+                        <h3 class="text-lg font-semibold text-red-900 mb-2">Critical Legal Distinction</h3>
+                        <p class="text-red-800">Tutors are independent educational contractors, NOT employees of HeyHelpy. This distinction is fundamental to the platform's operation.</p>
+                    </div>
+
+                    <div class="text-gray-700 space-y-4">
+                        <p>Tutors are independent contractors, not employees of HeyHelpy. We do not control, direct, or manage tutors' teaching methods or educational approaches. Tutors determine their own:</p>
+                        <ul class="list-disc pl-6 space-y-2">
+                            <li>Teaching methodologies and educational approaches</li>
+                            <li>Availability and scheduling preferences</li>
+                            <li>Tutoring rates and pricing structure</li>
+                            <li>Which students and subjects to accept</li>
+                            <li>Educational materials and learning resources</li>
+                        </ul>
+                        <p>Each tutor is responsible for their own taxes, professional insurance, educational licenses, and compliance with applicable laws.</p>
+                    </div>
+                </div>
+
+                <!-- Section 6: Payment Processing -->
+                <div class="legal-section">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">6. Payment Processing & Financial Terms</h2>
+                    
+                    <div class="text-gray-700 space-y-6">
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-3">6.1 Secure Payment Processing</h3>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li>All payments are processed securely through Stripe</li>
+                                <li>HeyHelpy does not store credit card information</li>
+                                <li>Payment disputes are handled through our platform support</li>
+                                <li>Refunds are processed according to our Cancellation Policy</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-3">6.2 Platform Fees</h3>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li>HeyHelpy charges a service fee for facilitating connections</li>
+                                <li>Fees are clearly disclosed before booking confirmation</li>
+                                <li>Platform fees support safety verification and technology infrastructure</li>
+                                <li>Tutors set their own rates; platform fees are additional</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-3">6.3 Tutor Payments</h3>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li>Tutors receive payment after session completion</li>
+                                <li>Payments are subject to our verification process</li>
+                                <li>Tutors are responsible for reporting income for tax purposes</li>
+                                <li>Payment schedules and methods are outlined in tutor agreements</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 7: Safety and Background Verification -->
+                <div class="legal-section">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">7. Safety & Background Verification</h2>
+                    
+                    <div class="text-gray-700 space-y-6">
+                        <div class="bg-green-50 border-l-4 border-green-400 p-6">
+                            <h3 class="text-lg font-semibold text-green-900 mb-2">Comprehensive Safety Measures</h3>
+                            <p class="text-green-800">All tutors undergo rigorous background verification including criminal history checks, identity verification, and professional reference validation.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-3">7.1 Required Verifications</h3>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li>Criminal background screening through certified providers</li>
+                                <li>Identity document verification</li>
+                                <li>Professional reference checks</li>
+                                <li>Educational credential verification where applicable</li>
+                                <li>Ongoing monitoring and review processes</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-3">7.2 Limitations of Background Checks</h3>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li>Background checks have inherent limitations</li>
+                                <li>May not reveal all relevant information</li>
+                                <li>Users should exercise additional due diligence</li>
+                                <li>HeyHelpy is not liable for undiscovered information</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 8: Data Protection and Privacy -->
+                <div class="legal-section">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">8. Data Protection & Privacy</h2>
+                    
+                    <div class="text-gray-700 space-y-4">
+                        <p>Your privacy and data security are fundamental to our platform. Our comprehensive data protection measures include:</p>
+                        <ul class="list-disc pl-6 space-y-2">
+                            <li>Educational records protection compliance</li>
+                            <li>Secure data encryption and storage</li>
+                            <li>Limited data collection focused on educational needs</li>
+                            <li>Location data used only for tutor-family matching</li>
+                            <li>No data sales to third-party marketers</li>
+                        </ul>
+                        <p>For complete details, please review our <a href="privacy-policy.html" class="text-brand-blue hover:underline">Privacy Policy</a>.</p>
+                    </div>
+                </div>
+
+                <!-- Section 9: Intellectual Property -->
+                <div class="legal-section">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">9. Intellectual Property</h2>
+                    
+                    <div class="text-gray-700 space-y-4">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3">9.1 Platform Content</h3>
+                        <ul class="list-disc pl-6 space-y-2">
+                            <li>HeyHelpy platform design, technology, and branding are protected</li>
+                            <li>Users may not copy, reproduce, or distribute platform content</li>
+                            <li>Educational materials created by tutors remain their intellectual property</li>
+                            <li>User-generated content (reviews, messages) may be used for platform improvement</li>
+                        </ul>
+
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3 mt-6">9.2 Educational Materials</h3>
+                        <ul class="list-disc pl-6 space-y-2">
+                            <li>Tutors retain ownership of their teaching materials and methods</li>
+                            <li>Families may not redistribute tutor-created educational content</li>
+                            <li>Academic progress reports may be shared with parent consent</li>
+                            <li>Platform-generated data insights remain HeyHelpy property</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Section 10: Prohibited Activities -->
+                <div class="legal-section">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">10. Prohibited Activities</h2>
+                    
+                    <div class="text-gray-700 space-y-4">
+                        <p>The following activities are strictly prohibited on the HeyHelpy platform:</p>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-gray-50 p-6 rounded-xl">
+                                <h4 class="font-semibold text-gray-900 mb-3">General Prohibitions</h4>
+                                <ul class="list-disc pl-4 space-y-1 text-sm">
+                                    <li>Fraudulent or misleading information</li>
+                                    <li>Harassment or inappropriate conduct</li>
+                                    <li>Violation of laws or regulations</li>
+                                    <li>Circumventing platform safety measures</li>
+                                    <li>Unauthorized access to accounts or data</li>
+                                </ul>
+                            </div>
+                            <div class="bg-gray-50 p-6 rounded-xl">
+                                <h4 class="font-semibold text-gray-900 mb-3">Educational Specific</h4>
+                                <ul class="list-disc pl-4 space-y-1 text-sm">
+                                    <li>Misrepresenting educational qualifications</li>
+                                    <li>Inappropriate content or materials</li>
+                                    <li>Academic dishonesty or cheating assistance</li>
+                                    <li>Non-educational service requests</li>
+                                    <li>Violation of student privacy rights</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 11: Liability and Insurance -->
+                <div class="legal-section">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">11. Liability & Insurance</h2>
+                    
+                    <div class="text-gray-700 space-y-4">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3">11.1 Platform Liability Limitations</h3>
+                        <ul class="list-disc pl-6 space-y-2">
+                            <li>HeyHelpy facilitates connections but does not provide educational services</li>
+                            <li>We are not liable for tutor actions, teaching methods, or academic outcomes</li>
+                            <li>Maximum liability limited to platform fees paid in preceding 12 months</li>
+                            <li>No liability for consequential, indirect, or punitive damages</li>
+                        </ul>
+
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3 mt-6">11.2 Insurance Recommendations</h3>
+                        <ul class="list-disc pl-6 space-y-2">
+                            <li>Tutors should maintain professional liability insurance</li>
+                            <li>Families should verify their homeowner's/renter's insurance coverage</li>
+                            <li>Additional coverage may be recommended for in-home services</li>
+                            <li>HeyHelpy does not provide insurance coverage for users</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Section 12: Compliance and Legal Obligations -->
+                <div class="legal-section">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">12. Compliance & Legal Obligations</h2>
+                    
+                    <div class="text-gray-700 space-y-6">
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-3">12.1 Educational Compliance</h3>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li>Compliance with educational privacy laws</li>
+                                <li>Student records protection requirements</li>
+                                <li>Academic integrity standards</li>
+                                <li>Special education accommodations where applicable</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-3">12.2 Geographic Compliance</h3>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li>Platform operates under Texas state law</li>
+                                <li>Services provided in North Texas area initially</li>
+                                <li>Compliance with local educational regulations</li>
+                                <li>Expansion subject to legal requirements in new jurisdictions</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-3">12.3 Reporting Obligations</h3>
+                            <ul class="list-disc pl-6 space-y-2">
+                                <li>Mandatory reporting of safety concerns</li>
+                                <li>Cooperation with law enforcement when required</li>
+                                <li>Educational standard violations reporting</li>
+                                <li>Data breach notification procedures</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="bg-gradient-to-br from-blue-50 to-green-50 p-8 rounded-2xl">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Legal Questions & Contact</h2>
+                    <div class="text-gray-700 space-y-3">
+                        <p><strong>HeyHelpy, Inc.</strong></p>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <p><strong>Legal Inquiries:</strong><br>info@heyhelpy.com</p>
+                                <p><strong>Safety Concerns:</strong><br>info@heyhelpy.com</p>
+                            </div>
+                            <div>
+                                <p><strong>Mailing Address:</strong><br>Melissa, Texas 75454</p>
+                                <p><strong>Response Time:</strong><br>Within 30 days of receipt</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Links -->
+    <section class="py-12 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Related Legal Information</h2>
+                <p class="text-gray-600">Complete your understanding of our platform policies</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <a href="terms-of-service.html" class="bg-white p-6 rounded-xl shadow-sm border hover:shadow-md transition-shadow">
+                    <i class="fas fa-file-contract text-brand-blue text-2xl mb-3"></i>
+                    <h3 class="font-semibold text-gray-900 mb-2">Terms of Service</h3>
+                    <p class="text-sm text-gray-600">Comprehensive terms governing platform use and user responsibilities</p>
+                </a>
+                <a href="privacy-policy.html" class="bg-white p-6 rounded-xl shadow-sm border hover:shadow-md transition-shadow">
+                    <i class="fas fa-shield-alt text-brand-green text-2xl mb-3"></i>
+                    <h3 class="font-semibold text-gray-900 mb-2">Privacy Policy</h3>
+                    <p class="text-sm text-gray-600">How we collect, use, and protect your personal and educational data</p>
+                </a>
+                <a href="cancellation-policy.html" class="bg-white p-6 rounded-xl shadow-sm border hover:shadow-md transition-shadow">
+                    <i class="fas fa-calendar-times text-brand-blue text-2xl mb-3"></i>
+                    <h3 class="font-semibold text-gray-900 mb-2">Cancellation Policy</h3>
+                    <p class="text-sm text-gray-600">Session cancellation procedures, refunds, and fee structures</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <span class="ml-2 text-lg font-bold">
+                            <span class="text-brand-green">Hey</span><span class="text-brand-blue">Helpy!</span>
+                        </span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Trusted local tutors, right in your neighborhood.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="index.html#safety" class="hover:text-white transition-colors">Trust & Safety</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="terms-of-service.html" class="hover:text-white transition-colors">Terms of Service</a></li>
+                        <li><a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="legal-policies.html" class="hover:text-white transition-colors">Legal Policies</a></li>
+                        <li><a href="cancellation-policy.html" class="hover:text-white transition-colors">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Download</h4>
+                    <div class="space-y-3">
+                        <a href="#" class="download-btn flex items-center text-gray-400 hover:text-white transition-colors opacity-50 cursor-not-allowed">
+                            <i class="fab fa-apple mr-2"></i>Coming Soon - iOS
+                        </a>
+                        <a href="#" class="download-btn flex items-center text-gray-400 hover:text-white transition-colors opacity-50 cursor-not-allowed">
+                            <i class="fab fa-google-play mr-2"></i>Coming Soon - Android
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 HeyHelpy by SupportHub. All rights reserved.</p>
+                <p class="mt-2 text-sm">Professional tutoring platform | Independent tutoring professionals | Family-focused technology</p>
+                <p class="mt-1 text-sm">Serving North Texas</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-brand-blue text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition-all duration-300 opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

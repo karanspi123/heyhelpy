@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancellation Policy - HeyHelpy</title>
+    <meta name="description" content="HeyHelpy Cancellation Policy - Session cancellation procedures, refunds, and fee structures for our tutoring platform.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-blue': '#3171e0',
+                        'brand-green': '#00c896',
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center cursor-pointer" onclick="window.location.href='index.html'">
+                    <div class="flex items-center">
+                        <span class="ml-2 text-xl font-bold">
+                            <span class="text-brand-green">Hey</span><span class="text-brand-blue">Helpy!</span>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 hover:text-brand-blue font-medium">Home</a>
+                    <a href="about.html" class="nav-link text-gray-700 hover:text-brand-blue font-medium">About</a>
+                    <a href="index.html#safety" class="nav-link text-gray-700 hover:text-brand-blue font-medium">Trust & Safety</a>
+                    <a href="contact.html" class="nav-link text-gray-700 hover:text-brand-blue font-medium">Contact</a>
+                </div>
+
+                <!-- Download Buttons -->
+                <div class="hidden sm:flex items-center space-x-3">
+                    <a href="#" class="download-btn inline-flex items-center px-4 py-2 border border-gray-300 rounded-lg text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 transition-colors opacity-50 cursor-not-allowed">
+                        <i class="fab fa-apple mr-2"></i>
+                        Coming Soon - App Store
+                    </a>
+                    <a href="#" class="download-btn inline-flex items-center px-4 py-2 bg-brand-blue text-white rounded-lg text-sm font-medium hover:bg-blue-600 transition-colors opacity-50 cursor-not-allowed">
+                        <i class="fab fa-google-play mr-2"></i>
+                        Coming Soon - Google Play
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-gray-700 hover:text-brand-blue" id="mobile-menu-btn">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-4 py-3 space-y-3">
+                <a href="index.html" class="block text-gray-700 font-medium">Home</a>
+                <a href="about.html" class="block text-gray-700 font-medium">About</a>
+                <a href="index.html#safety" class="block text-gray-700 font-medium">Trust & Safety</a>
+                <a href="contact.html" class="block text-gray-700 font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-blue-50 to-green-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 animate-fade-in">Cancellation Policy</h1>
+            <p class="text-xl text-gray-600 animate-fade-in-delay">Fair and transparent tutoring session cancellation procedures</p>
+        </div>
+    </section>
+
+    <!-- Cancellation Content -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Overview -->
+            <div class="bg-gradient-to-br from-blue-50 to-green-50 p-8 rounded-2xl mb-12">
+                <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-brand-green rounded-xl flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-calendar-times text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">Fair Cancellation Framework</h2>
+                        <p class="text-gray-700 leading-relaxed">
+                            Our cancellation policy balances family flexibility with tutor time protection. Refunds and fees are 
+                            based on cancellation timing to ensure fairness for both families and tutors. All times are calculated 
+                            from the scheduled session start time.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Reference -->
+            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 mb-12">
+                <h3 class="text-lg font-semibold text-yellow-900 mb-4">Quick Reference Guide</h3>
+                <div class="grid md:grid-cols-2 gap-4 text-sm text-yellow-800">
+                    <div>
+                        <p><strong>24+ Hours Before:</strong> Full refund, no fees</p>
+                        <p><strong>2-24 Hours Before:</strong> 80% refund</p>
+                        <p><strong>Less than 2 Hours:</strong> 50% refund</p>
+                    </div>
+                    <div>
+                        <p><strong>Grace Period:</strong> 1 hour for accidental bookings</p>
+                        <p><strong>Tutor Cancellation:</strong> 100% refund always</p>
+                        <p><strong>No-Show:</strong> No refund</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cancellation Content Sections -->
+            <div class="space-y-12">
+                
+                <!-- Section 1: Family-Initiated Cancellations -->
+                <div class="cancellation-section">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">1. Family-Initiated Cancellations</h2>
+                    
+                    <div class="space-y-8">
+                        <!-- Scenario 1 -->
+                        <div class="bg-green-50 border border-green-200 p-6 rounded-xl">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-check text-white"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="text-lg font-semibold text-green-900 mb-2">Canceled 24+ Hours Before Session</h3>
+                                    <div class="grid md:grid-cols-3 gap-4 text-sm">
+                                        <div class="bg-white p-4 rounded-lg">
+                                            <p class="font-semibold text-green-800">Family Receives</p>
+                                            <p class="text-green-700">100% Full Refund</p>
+                                        </div>
+                                        <div class="bg-white p-4 rounded-lg">
+                                            <p class="font-semibold text-green-800">Tutor Receives</p>
+                                            <p class="text-green-700">No Payment</p>
+                                        </div>
+                                        <div class="bg-white p-4 rounded-lg">
+                                            <p class="font-semibold text-green-800">Platform Fee</p>
+                                            <p class="text-green-700">No Charge</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-green-800 mt-3 text-sm">Provides adequate notice for tutor scheduling and ensures complete family satisfaction.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Scenario 2 -->
+                        <div class="bg-yellow-50 border border-yellow-200 p-6 rounded-xl">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-clock text-white"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="text-lg font-semibold text-yellow-900 mb-2">Canceled 2-24 Hours Before Session</h3>
+                                    <div class="grid md:grid-cols-3 gap-4 text-sm">
+                                        <div class="bg-white p-4 rounded-lg">
+                                            <p class="font-semibold text-yellow-800">Family Receives</p>
+                                            <p class="text-yellow-700">80% Refund</p>
+                                        </div>
+                                        <div class="bg-white p-4 rounded-lg">
+                                            <p class="font-semibold text-yellow-800">Tutor Receives</p>
+                                            <p class="text-yellow-700">10% Compensation</p>
+                                        </div>
+                                        <div class="bg-white p-4 rounded-lg">
+                                            <p class="font-semibold text-yellow-800">Platform Fee</p>
+                                            <p class="text-yellow-700">10% Processing</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-yellow-800 mt-3 text-sm">Accounts for partial late notice while compensating tutor for blocked time and preparation.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Scenario 3 -->
+                        <div class="bg-orange-50 border border-orange-200 p-6 rounded-xl">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-exclamation-triangle text-white"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="text-lg font-semibold text-orange-900 mb-2">Canceled Less Than 2 Hours Before Session</h3>
+                                    <div class="grid md:grid-cols-3 gap-4 text-sm">
+                                        <div class="bg-white p-4 rounded-lg">
+                                            <p class="font-semibold text-orange-800">Family Receives</p>
+                                            <p class="text-orange-700">50% Refund</p>
+                                        </div>
+                                        <div class="bg-white p-4 rounded-lg">
+                                            <p class="font-semibold text-orange-800">Tutor Receives</p>
+                                            <p class="text-orange-700">40% Compensation</p>
+                                        </div>
+                                        <div class="bg-white p-4 rounded-lg">
+                                            <p class="font-semibold text-orange-800">Platform Fee</p>
+                                            <p class="text-orange-700">10% Processing</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-orange-800 mt-3 text-sm">Significant compensation for tutor's commitment at short notice while providing partial family refund.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Grace Period -->
+                        <div class="bg-blue-50 border border-blue-200 p-6 rounded-xl">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-heart text-white"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="text-lg font-semibold text-blue-900 mb-2">Grace Period: Canceled Within 1 Hour of Booking</h3>
+                                    <div class="bg-white p-4 rounded-lg">
+                                        <p class="text-blue-800 text-sm">
+                                            <strong>Special Rule:</strong> If you cancel within 1 hour of making the booking 
+                                            (regardless of session timing), you receive a 100% full refund. This grace period 
+                                            accounts for accidental bookings or immediate changes of mind.
+                                        </p>
+                                    </div>
+                                    <div class="grid md:grid-cols-3 gap-4 text-sm mt-4">
+                                        <div class="bg-white p-4 rounded-lg">
+                                            <p class="font-semibold text-blue-800">Family Receives</p>
+                                            <p class="text-blue-700">100% Full Refund</p>
+                                        </div>
+                                        <div class="bg-white p-4 rounded-lg">
+                                            <p class="font-semibold text-blue-800">Tutor Receives</p>
+                                            <p class="text-blue-700">No Payment</p>
+                                        </div>
+                                        <div class="bg-white p-4 rounded-lg">
+                                            <p class="font-semibold text-blue-800">Platform Fee</p>
+                                            <p class="text-blue-700">No Charge</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2: Tutor-Initiated Cancellations -->
+                <div class="cancellation-section">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">2. Tutor-Initiated Cancellations</h2>
+                    
+                    <div class="bg-red-50 border border-red-200 p-6 rounded-xl">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-user-times text-white"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-lg font-semibold text-red-900 mb-4">Tutor Cancellation at Any Time</h3>
+                                <div class="grid md:grid-cols-3 gap-4 text-sm">
+                                    <div class="bg-white p-4 rounded-lg">
+                                        <p class="font-semibold text-red-800">Family Receives</p>
+                                        <p class="text-red-700">100% Full Refund</p>
+                                    </div>
+                                    <div class="bg-white p-4 rounded-lg">
+                                        <p class="font-semibold text-red-800">Tutor Receives</p>
+                                        <p class="text-red-700">No Payment</p>
+                                    </div>
+                                    <div class="bg-white p-4 rounded-lg">
+                                        <p class="font-semibold text-red-800">Platform Fee</p>
+                                        <p class="text-red-700">No Charge</p>
+                                    </div>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg mt-4">
+                                    <h4 class="font-semibold text-red-800 mb-2">Quality Tracking</h4>
+                                    <ul class="text-red-700 text-sm space-y-1">
+                                        <li>• All tutor cancellations are tracked internally for quality monitoring</li>
+                                        <li>• Repeated cancellations may result in account review</li>
+                                        <li>• Emergency cancellations are understood and handled with care</li>
+                                        <li>• Tutors are encouraged to maintain reliable scheduling</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3: Booking Restrictions -->
+                <div class="cancellation-section">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">3. Booking Restrictions & Time Limits</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-gray-50 border border-gray-200 p-6 rounded-xl">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-4">3.1 Last-Minute Booking Prevention</h3>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-2">Minimum Booking Window</h4>
+                                    <ul class="text-gray-700 text-sm space-y-1">
+                                        <li>• Sessions cannot be booked less than 2 hours before start time</li>
+                                        <li>• Platform automatically blocks last-minute bookings</li>
+                                        <li>• Ensures adequate preparation time for both parties</li>
+                                        <li>• Prevents rushed or inadequate tutoring experiences</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-2">Emergency Requests</h4>
+                                    <ul class="text-gray-700 text-sm space-y-1">
+                                        <li>• Contact support for urgent educational needs</li>
+                                        <li>• Special accommodation may be available</li>
+                                        <li>• Subject to tutor availability and platform approval</li>
+                                        <li>• Standard cancellation policies apply</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-50 border border-gray-200 p-6 rounded-xl">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-4">3.2 Session Start Protection</h3>
+                            <div class="bg-red-100 border border-red-300 p-4 rounded-lg">
+                                <h4 class="font-semibold text-red-800 mb-2">No Cancellations After Session Start</h4>
+                                <ul class="text-red-700 text-sm space-y-1">
+                                    <li>• Cancellations are not permitted once the session has begun</li>
+                                    <li>• System automatically rejects post-start cancellation requests</li>
+                                    <li>• Session time verification prevents abuse</li>
+                                    <li>• Contact support for legitimate technical issues</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 4: No-Show Policy -->
+                <div class="cancellation-section">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">4. No-Show Policy</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-red-50 border border-red-200 p-6 rounded-xl">
+                            <h3 class="text-lg font-semibold text-red-900 mb-4">Family No-Show</h3>
+                            <div class="grid md:grid-cols-3 gap-4 text-sm">
+                                <div class="bg-white p-4 rounded-lg">
+                                    <p class="font-semibold text-red-800">Family Receives</p>
+                                    <p class="text-red-700">No Refund (0%)</p>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg">
+                                    <p class="font-semibold text-red-800">Tutor Receives</p>
+                                    <p class="text-red-700">90% Payment</p>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg">
+                                    <p class="font-semibold text-red-800">Platform Fee</p>
+                                    <p class="text-red-700">10% Processing</p>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg mt-4">
+                                <h4 class="font-semibold text-red-800 mb-2">Definition of No-Show</h4>
+                                <ul class="text-red-700 text-sm space-y-1">
+                                    <li>• Student not present 15 minutes after session start time</li>
+                                    <li>• No communication from family about delay or absence</li>
+                                    <li>• Tutor unable to make contact despite reasonable attempts</li>
+                                    <li>• Session marked as no-show in platform system</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="bg-yellow-50 border border-yellow-200 p-6 rounded-xl">
+                            <h3 class="text-lg font-semibold text-yellow-900 mb-4">Tutor No-Show</h3>
+                            <div class="grid md:grid-cols-3 gap-4 text-sm">
+                                <div class="bg-white p-4 rounded-lg">
+                                    <p class="font-semibold text-yellow-800">Family Receives</p>
+                                    <p class="text-yellow-700">100% Full Refund</p>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg">
+                                    <p class="font-semibold text-yellow-800">Tutor Receives</p>
+                                    <p class="text-yellow-700">No Payment</p>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg">
+                                    <p class="font-semibold text-yellow-800">Additional Action</p>
+                                    <p class="text-yellow-700">Account Review</p>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg mt-4">
+                                <p class="text-yellow-800 text-sm">Tutor no-shows are taken seriously and may result in account suspension or termination. Emergency credit may be offered to affected families.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 5: Technical Implementation -->
+                <div class="cancellation-section">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">5. Time Handling & System Validation</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-blue-50 border border-blue-200 p-6 rounded-xl">
+                            <h3 class="text-lg font-semibold text-blue-900 mb-4">5.1 Time Zone Management</h3>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <h4 class="font-semibold text-blue-800 mb-2">UTC Storage Standard</h4>
+                                    <ul class="text-blue-700 text-sm space-y-1">
+                                        <li>• All booking and session times stored in UTC format</li>
+                                        <li>• Maintains consistency across different time zones</li>
+                                        <li>• Prevents scheduling conflicts and confusion</li>
+                                        <li>• Local time conversion only for display purposes</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-blue-800 mb-2">User Display</h4>
+                                    <ul class="text-blue-700 text-sm space-y-1">
+                                        <li>• Times displayed in user's local time zone</li>
+                                        <li>• Clear time zone indicators shown</li>
+                                        <li>• Cancellation deadlines clearly marked</li>
+                                        <li>• Real-time countdown to cancellation cutoffs</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-green-50 border border-green-200 p-6 rounded-xl">
+                            <h3 class="text-lg font-semibold text-green-900 mb-4">5.2 System Validation</h3>
+                            <div class="space-y-4">
+                                <div>
+                                    <h4 class="font-semibold text-green-800 mb-2">Required Field Validation</h4>
+                                    <ul class="text-green-700 text-sm space-y-1">
+                                        <li>• Server validates presence of all required time fields</li>
+                                        <li>• Ensures logical ordering (session time after booking time)</li>
+                                        <li>• Validates cancellation timing against current time</li>
+                                        <li>• Returns HTTP 400 error for invalid requests</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-green-800 mb-2">Audit Logging</h4>
+                                    <ul class="text-green-700 text-sm space-y-1">
+                                        <li>• Every cancellation logged with precise timestamps</li>
+                                        <li>• Refund amounts and tutor payouts recorded</li>
+                                        <li>• Essential for audit and customer support purposes</li>
+                                        <li>• Enables dispute resolution and quality tracking</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 6: Refund Processing -->
+                <div class="cancellation-section">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">6. Refund Processing & Timeline</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-purple-50 border border-purple-200 p-6 rounded-xl">
+                            <h3 class="text-lg font-semibold text-purple-900 mb-4">6.1 Refund Timeline</h3>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <h4 class="font-semibold text-purple-800 mb-2">Processing Time</h4>
+                                    <ul class="text-purple-700 text-sm space-y-1">
+                                        <li>• Automatic refunds processed within 24 hours</li>
+                                        <li>• Credit card refunds: 3-5 business days</li>
+                                        <li>• Bank transfers: 5-7 business days</li>
+                                        <li>• Platform credit: Immediate availability</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-purple-800 mb-2">Refund Methods</h4>
+                                    <ul class="text-purple-700 text-sm space-y-1">
+                                        <li>• Refunds issued to original payment method</li>
+                                        <li>• Platform credit option for faster access</li>
+                                        <li>• Credit can be used for future sessions</li>
+                                        <li>• Special circumstances handled by support</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-50 border border-gray-200 p-6 rounded-xl">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-4">6.2 Disputed Cancellations</h3>
+                            <div class="space-y-4">
+                                <p class="text-gray-700">If you believe a cancellation was processed incorrectly:</p>
+                                <ul class="text-gray-700 text-sm space-y-2 list-disc pl-6">
+                                    <li>Contact our support team within 48 hours of the session</li>
+                                    <li>Provide detailed information about the circumstances</li>
+                                    <li>Include any relevant communication records</li>
+                                    <li>We will review and respond within 2 business days</li>
+                                </ul>
+                                <div class="bg-white p-4 rounded-lg border">
+                                    <p class="text-gray-800 text-sm"><strong>Contact Support:</strong> info@heyhelpy.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 7: Special Circumstances -->
+                <div class="cancellation-section">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">7. Special Circumstances & Exceptions</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-indigo-50 border border-indigo-200 p-6 rounded-xl">
+                            <h3 class="text-lg font-semibold text-indigo-900 mb-4">7.1 Emergency Cancellations</h3>
+                            <div class="space-y-4">
+                                <p class="text-indigo-800">We understand that emergencies happen. The following situations may qualify for exception handling:</p>
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div class="bg-white p-4 rounded-lg">
+                                        <h4 class="font-semibold text-indigo-800 mb-2">Family Emergencies</h4>
+                                        <ul class="text-indigo-700 text-sm space-y-1">
+                                            <li>• Medical emergencies</li>
+                                            <li>• Family crises</li>
+                                            <li>• Severe weather conditions</li>
+                                            <li>• School closures or lockdowns</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-white p-4 rounded-lg">
+                                        <h4 class="font-semibold text-indigo-800 mb-2">Tutor Emergencies</h4>
+                                        <ul class="text-indigo-700 text-sm space-y-1">
+                                            <li>• Personal health issues</li>
+                                            <li>• Family emergencies</li>
+                                            <li>• Transportation failures</li>
+                                            <li>• Technical difficulties</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg border border-indigo-200">
+                                    <p class="text-indigo-800 text-sm"><strong>Note:</strong> Emergency exceptions are reviewed case-by-case and may require documentation. Contact support immediately for assistance.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-pink-50 border border-pink-200 p-6 rounded-xl">
+                            <h3 class="text-lg font-semibold text-pink-900 mb-4">7.2 Technical Issues</h3>
+                            <div class="space-y-4">
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div class="bg-white p-4 rounded-lg">
+                                        <h4 class="font-semibold text-pink-800 mb-2">Platform Technical Problems</h4>
+                                        <ul class="text-pink-700 text-sm space-y-1">
+                                            <li>• App crashes or connectivity issues</li>
+                                            <li>• Payment processing failures</li>
+                                            <li>• Booking system malfunctions</li>
+                                            <li>• Video call technical difficulties</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-white p-4 rounded-lg">
+                                        <h4 class="font-semibold text-pink-800 mb-2">Resolution Process</h4>
+                                        <ul class="text-pink-700 text-sm space-y-1">
+                                            <li>• Full refunds for platform-caused issues</li>
+                                            <li>• Tutor compensation when appropriate</li>
+                                            <li>• Session rescheduling assistance</li>
+                                            <li>• Technical support and solutions</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-teal-50 border border-teal-200 p-6 rounded-xl">
+                            <h3 class="text-lg font-semibold text-teal-900 mb-4">7.3 Recurring Sessions</h3>
+                            <div class="space-y-4">
+                                <p class="text-teal-800">For families with recurring weekly sessions, special considerations apply:</p>
+                                <ul class="text-teal-700 text-sm space-y-2 list-disc pl-6">
+                                    <li>Each session is treated independently for cancellation purposes</li>
+                                    <li>Bulk cancellations must be processed individually</li>
+                                    <li>Long-term scheduling changes should be discussed with tutors</li>
+                                    <li>Holiday and vacation schedules can be pre-arranged</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 8: Policy Updates -->
+                <div class="cancellation-section">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">8. Policy Updates & Changes</h2>
+                    
+                    <div class="bg-gray-50 border border-gray-200 p-6 rounded-xl">
+                        <div class="space-y-4">
+                            <p class="text-gray-700">HeyHelpy reserves the right to update this Cancellation Policy to improve fairness, address platform growth, or comply with legal requirements.</p>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-2">Notification Process</h4>
+                                    <ul class="text-gray-700 text-sm space-y-1">
+                                        <li>• 30 days advance notice for major changes</li>
+                                        <li>• Email notifications to all users</li>
+                                        <li>• In-app announcements and alerts</li>
+                                        <li>• Updated policy posted on website</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-2">User Rights</h4>
+                                    <ul class="text-gray-700 text-sm space-y-1">
+                                        <li>• Existing bookings honor previous policy</li>
+                                        <li>• Option to cancel account if disagreeing</li>
+                                        <li>• Grandfathered rates for contract tutors</li>
+                                        <li>• Feedback incorporation when possible</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="bg-gradient-to-br from-blue-50 to-green-50 p-8 rounded-2xl">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Questions About Cancellations?</h2>
+                    <div class="text-gray-700 space-y-3">
+                        <p>Our support team is here to help with any cancellation questions or special circumstances.</p>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <p><strong>General Support:</strong><br>info@heyhelpy.com</p>
+                                <p><strong>Emergency Cancellations:</strong><br>info@heyhelpy.com (urgent)</p>
+                            </div>
+                            <div>
+                                <p><strong>Response Time:</strong><br>Within 24 hours (4 hours for emergencies)</p>
+                                <p><strong>Phone Support:</strong><br>Available during platform launch</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Links -->
+    <section class="py-12 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Related Policy Information</h2>
+                <p class="text-gray-600">Understanding all aspects of our platform policies</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <a href="terms-of-service.html" class="bg-white p-6 rounded-xl shadow-sm border hover:shadow-md transition-shadow">
+                    <i class="fas fa-file-contract text-brand-blue text-2xl mb-3"></i>
+                    <h3 class="font-semibold text-gray-900 mb-2">Terms of Service</h3>
+                    <p class="text-sm text-gray-600">Complete terms governing platform use and user agreements</p>
+                </a>
+                <a href="privacy-policy.html" class="bg-white p-6 rounded-xl shadow-sm border hover:shadow-md transition-shadow">
+                    <i class="fas fa-shield-alt text-brand-green text-2xl mb-3"></i>
+                    <h3 class="font-semibold text-gray-900 mb-2">Privacy Policy</h3>
+                    <p class="text-sm text-gray-600">How we protect and manage your personal and educational data</p>
+                </a>
+                <a href="legal-policies.html" class="bg-white p-6 rounded-xl shadow-sm border hover:shadow-md transition-shadow">
+                    <i class="fas fa-balance-scale text-brand-blue text-2xl mb-3"></i>
+                    <h3 class="font-semibold text-gray-900 mb-2">Legal Policies</h3>
+                    <p class="text-sm text-gray-600">Legal framework and compliance for our tutoring platform</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <span class="ml-2 text-lg font-bold">
+                            <span class="text-brand-green">Hey</span><span class="text-brand-blue">Helpy!</span>
+                        </span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Trusted local tutors, right in your neighborhood.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="index.html#safety" class="hover:text-white transition-colors">Trust & Safety</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="terms-of-service.html" class="hover:text-white transition-colors">Terms of Service</a></li>
+                        <li><a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="legal-policies.html" class="hover:text-white transition-colors">Legal Policies</a></li>
+                        <li><a href="cancellation-policy.html" class="hover:text-white transition-colors">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Download</h4>
+                    <div class="space-y-3">
+                        <a href="#" class="download-btn flex items-center text-gray-400 hover:text-white transition-colors opacity-50 cursor-not-allowed">
+                            <i class="fab fa-apple mr-2"></i>Coming Soon - iOS
+                        </a>
+                        <a href="#" class="download-btn flex items-center text-gray-400 hover:text-white transition-colors opacity-50 cursor-not-allowed">
+                            <i class="fab fa-google-play mr-2"></i>Coming Soon - Android
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 HeyHelpy by SupportHub. All rights reserved.</p>
+                <p class="mt-2 text-sm">Professional tutoring platform | Independent tutoring professionals | Family-focused technology</p>
+                <p class="mt-1 text-sm">Serving North Texas</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-brand-blue text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition-all duration-300 opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
